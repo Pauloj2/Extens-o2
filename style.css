@@ -1,11 +1,199 @@
 .navbar-custom {
-  background-color: #2E4A70; 
+  background-color: #2E4A70;
 }
 
 .navbar-custom .nav-link {
-  color: #ffffff; 
+  color: #ffffff;
 }
 
 .navbar-custom .nav-link:hover {
   color: #ffcc00;
+}
+
+.banner-saude {
+  background: url("img/banner.png") no-repeat center center;
+  background-size: cover;
+  color: white;
+  min-height: 450px;
+  /* altura mínima */
+  display: flex;
+  align-items: center;
+}
+
+.btn-amarelo {
+  background-color: #CFBA40;
+  border-color: #CFBA40;
+  color: #000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn-amarelo:hover {
+  background-color: #b5a233;
+  border-color: #b5a233;
+  color: #000;
+}
+
+.banner-funcionalidades {
+  background: url("img/sessaoTeste2.png") no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  /* deixa os textos brancos para contraste */
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+}
+
+/* --- Estilos para a Seção Principal (Banner) --- */
+.banner-funcionalidades {
+  background-color: #F0EAD6;
+  /* Um tom suave de bege/areia para o fundo, parecido com a imagem */
+  padding-top: 5rem;
+  /* Espaçamento superior */
+  padding-bottom: 5rem;
+  /* Espaçamento inferior */
+}
+
+/* Estilo para a imagem dos profissionais de saúde, se for uma tag <img> */
+.banner-funcionalidades .col-md-6 img {
+  max-width: 100%;
+  /* Garante que a imagem seja responsiva */
+  height: auto;
+  display: block;
+  /* Remove espaço extra abaixo da imagem */
+  border-radius: 8px;
+  /* Opcional: bordas levemente arredondadas */
+}
+
+/* --- Estilos para o Título da Seção --- */
+h2 {
+  color: #2E4A70;
+  /* Um cinza escuro para o título, suave mas legível */
+  font-size: 2.5rem;
+  /* Tamanho do título */
+  margin-bottom: 2.5rem;
+  /* Espaçamento abaixo do título */
+  font-weight: 700;
+  /* Negrito */
+  text-align: center;
+  /* Alinhamento do título */
+}
+
+/* --- Estilos para os Cards de Funcionalidades --- */
+.card {
+  background-color: #FFFFFF;
+  /* Fundo branco puro para os cards */
+  border: 1px solid #E0E0E0;
+  /* Borda suave para definição, parecido com a imagem */
+  border-radius: 12px;
+  /* Bordas mais arredondadas para um visual moderno */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  /* Sombra mais pronunciada para profundidade */
+  padding: 1.5rem;
+  /* Espaçamento interno */
+  text-align: left;
+  /* Alinhamento do texto à esquerda, como na imagem */
+  height: 100%;
+  /* Garante que todos os cards tenham a mesma altura */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  /* Transição para efeitos de hover */
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  /* Levanta o card no hover */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  /* Aumenta a sombra no hover */
+}
+
+.card h4 {
+  color: #24B0BA;
+  /* Azul Petróleo da sua paleta para o título do card */
+  font-size: 1.35rem;
+  /* Tamanho do título do card */
+  font-weight: 600;
+  /* Seminegrito */
+  margin-bottom: 0.8rem;
+  /* Espaçamento abaixo do título do card */
+}
+
+.card p {
+  color: #6C757D;
+  /* Um cinza mais escuro para o parágrafo */
+  font-size: 0.95rem;
+  /* Tamanho da fonte do parágrafo */
+  line-height: 1.6;
+  /* Altura da linha para melhor legibilidade */
+}
+
+.imagem-bem-estar {
+  width: 75%;
+  /* Define a largura para 75% do contêiner */
+  max-width: 450px;
+  /* Define um tamanho máximo, se preferir */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  /* Centraliza a imagem no meio da coluna */
+}
+
+/* Opcional: Para telas menores */
+@media (max-width: 768px) {
+  .imagem-bem-estar {
+    width: 90%;
+    /* Ajusta para um tamanho maior em telas menores */
+  }
+}
+
+.acesso-ao-sistema {
+  width: 75%;
+  /* Define a largura para 75% do contêiner */
+  max-width: 450px;
+  /* Define um tamanho máximo, se preferir */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  /* Centraliza a imagem no meio da coluna */
+}
+
+@media (max-width: 768px) {
+  .acesso-ao-sistema {
+    width: 90%;
+    /* Ajusta para um tamanho maior em telas menores */
+  }
+}
+
+/* --- Media Queries para Responsividade --- */
+@media (max-width: 767.98px) {
+  .banner-funcionalidades .col-md-6:first-child {
+    /* Coluna da imagem */
+    margin-bottom: 2rem;
+    /* Espaçamento abaixo da imagem em telas menores */
+  }
+
+  .banner-funcionalidades h2 {
+    text-align: center;
+    /* Centraliza o título em telas menores */
+    font-size: 2rem;
+  }
+
+  .card {
+    padding: 1.2rem;
+  }
+
+  .card h4 {
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+
+  /* Em telas muito pequenas, os cards podem ocupar toda a largura */
+  .col-6.mb-3 {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
 }
